@@ -24,6 +24,9 @@ from .SSLProxiesFetcher import SSLProxiesFetcher
 from .ProxyListPlusFetcher import ProxyListPlusFetcher
 from .ProxyListPlusFetcher import ProxyListPlusFetcher
 from .ProxyList_GennodeFetcher import ProxyList_GennodeFetcher
+from .ZdayeFetcher import ZdayeFetcher
+from .OpenProxyListFetcher import OpenProxyListFetcher
+from .FreeProxyList2Fetcher import FreeProxyList2Fetcher
 
 fetchers = [
     Fetcher(name='uu-proxy.com', fetcher=UUFetcher),
@@ -45,5 +48,8 @@ fetchers = [
     Fetcher(name='free-proxy-list.net', fetcher=FreeProxyListFetcher),
     Fetcher(name='www.sslproxies.org', fetcher=SSLProxiesFetcher),
     Fetcher(name='list.proxylistplus.com', fetcher=ProxyListPlusFetcher),
-    Fetcher(name='proxylist.geonode.com', fetcher=ProxyList_GennodeFetcher)
+    Fetcher(name='proxylist.geonode.com', fetcher=ProxyList_GennodeFetcher),
+    Fetcher(name='zdaye.com', fetcher=ZdayeFetcher),
+    Fetcher(name='github.com/roosterkid/openproxylist', fetcher=OpenProxyListFetcher),
+    Fetcher(name='github.com/vakhov/fresh-proxy-list', fetcher=FreeProxyList2Fetcher),
 ]
